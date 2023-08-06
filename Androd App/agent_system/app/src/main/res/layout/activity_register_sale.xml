@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- If the contents exceed the screen height start vertical scrolling -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingBottom="@dimen/activity_vertical_margin"
+		android:paddingLeft="@dimen/activity_horizontal_margin"
+		android:paddingRight="@dimen/activity_horizontal_margin"
+		android:paddingTop="@dimen/activity_vertical_margin"
+		tools:context=".MainActivity">
+		
+		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			
+			<TextView
+				android:id="@+id/txt0"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dip"
+				android:layout_centerHorizontal="true"
+				android:text="Product Details"
+				android:layout_marginBottom="10dp"
+			/>
+			
+			<!-- Text Label -->
+			<TextView
+				android:id="@+id/txt1"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Name:"
+				android:layout_below="@id/txt0"
+			/>
+			<!-- Spinner Element -->
+			<Spinner 
+				android:id="@+id/name"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/txt1"
+				android:layout_marginBottom="10dp"
+			/>
+			
+			<!-- Text Label -->
+			<TextView
+				android:id="@+id/txt2"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Brand:"
+				android:layout_below="@id/name"
+			/>
+			<Spinner  
+				android:id="@+id/brand" 
+				android:layout_width="fill_parent"  
+				android:layout_height="wrap_content"			
+				android:layout_below="@id/txt2"
+				android:layout_marginBottom="10dp"
+			 />  
+			
+			<!-- Text Label -->
+			<TextView
+				android:id="@+id/txt3"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Quantity:"
+				android:layout_below="@id/brand"
+			/>
+			<Spinner  
+				android:id="@+id/quantity" 
+				android:layout_width="fill_parent"  
+				android:layout_height="wrap_content"				 
+				android:layout_below="@id/txt3"
+				android:layout_marginBottom="10dp"
+			 />  
+			
+			<!-- Text Label -->
+			<TextView
+				android:id="@+id/txt4"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Season:"
+				android:layout_below="@id/quantity"
+			/>
+			<!-- Spinner Element -->
+			<Spinner 
+				android:id="@+id/season"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/txt4"
+				android:layout_marginBottom="10dp"
+			/>
+			
+			<!-- Text Label -->
+			<TextView
+				android:id="@+id/txt5"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Age Group:"
+				android:layout_below="@id/season"
+			/>
+			<!-- Spinner Element -->
+			<Spinner 
+				android:id="@+id/age_group"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/txt5"
+				android:layout_marginBottom="10dp"
+			/>
+			
+			<!-- Text Label -->
+			<TextView
+				android:id="@+id/txt6"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Gender:"
+				android:layout_below="@id/age_group"
+			/>
+			<!-- Spinner Element -->
+			<Spinner 
+				android:id="@+id/gender"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/txt6"
+				android:layout_marginBottom="10dp"
+			/>			
+			
+			<!-- Text Label -->
+			<TextView
+				android:id="@+id/txt7"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Location:"
+				android:layout_below="@id/gender"
+			/>
+			<!-- Spinner Element -->
+			<Spinner 
+				android:id="@+id/location"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/txt7"
+				android:layout_marginBottom="10dp"
+			/>
+
+				<!-- Text Label -->
+			<TextView
+				android:id="@+id/txt8"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Items Number:"
+				android:layout_below = "@+id/location"
+			/>
+			<EditText  
+				android:id="@+id/items_count" 
+				android:layout_width="fill_parent"  
+				android:layout_height="wrap_content"				 
+				android:inputType="number"
+				android:layout_below = "@+id/txt8"
+				
+			/> 
+			
+			  <Button
+				android:id="@+id/add_record"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_marginRight="50dp"
+				android:layout_marginBottom="10dp"
+				android:layout_below="@id/items_count"
+				android:text="Add Item" />
+				
+				<Button
+				android:id="@+id/upload"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_toRightOf="@id/add_record"
+				android:layout_marginBottom="10dp"
+				android:text="Upload" />
+		
+		</RelativeLayout>
+
+</ScrollView>
